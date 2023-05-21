@@ -37,15 +37,17 @@ public class MainActivity extends AppCompatActivity {
         rbtn2= findViewById(R.id.rbtn2);
         rg= findViewById(R.id.rgroup);
 
-        kullanici eren = new kullanici("eren@hotmail.com", "solmaz");
+
+
+        kullanici eren = new kullanici("alparslanaydgn02@gmail.com", "123");
 
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (et1.getText().toString().equals("eren@hotmail.com") && et2.getText().toString().equals("solmaz"))
+                if (et1.getText().toString().equals("alparslanaydgn02@gmail.com") && et2.getText().toString().equals("123"))
                 {
-                    Intent i = new Intent(MainActivity.this, MainActivity2.class);
+                    Intent i = new Intent(MainActivity.this, MainActivity6.class);
                     startActivity(i);
                 }
                 else

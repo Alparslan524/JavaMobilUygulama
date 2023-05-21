@@ -49,7 +49,7 @@ public class MainActivity6 extends AppCompatActivity {
                         break;
 
                     case R.id.navigation_profile:
-                        Toast.makeText(MainActivity6.this, "Profile gidiliyor...", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity6.this, "Uygulamalara gidiliyor...", Toast.LENGTH_SHORT).show();
                         break;
                 }
             }

@@ -5,19 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@drawable/doviz"
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".MainActivity3"
     tools:visibility="visible">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:contentDescription="@string/todo"
-        tools:srcCompat="@drawable/ic_launcher_foreground" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        app:srcCompat="@drawable/symbol_dollar_euro" />
 
     <EditText
         android:id="@+id/h1"
@@ -25,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:text="TL miktarı giriniz" />
+        android:hint="TL miktarı giriniz" />
 
     <EditText
         android:id="@+id/h2"
@@ -33,16 +30,15 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:text="Günlük döviz kuru" />
+        android:hint="Günlük döviz kuru" />
 
     <RadioGroup
         android:id="@+id/rg"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        >
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/rb1"
@@ -77,9 +73,9 @@
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:text="@string/sonu"
-        android:textStyle="bold"
         android:textColor="@color/material_on_primary_emphasis_high_type"
-        android:textSize="22dp" />
+        android:textSize="22dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn2"

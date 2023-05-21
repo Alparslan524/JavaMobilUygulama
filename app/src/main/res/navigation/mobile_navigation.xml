@@ -22,9 +22,10 @@
         android:name="com.example.mobilProje.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
-    <fragment
+
+    <activity
         android:id="@+id/navigation_profile"
-        android:name="com.example.mobilProje.ui.profile.ProfileFragment"
-        android:label="@string/title_profile"
-        tools:layout="@layout/profile_fragment" />
+        android:name="com.example.mobilProje.MainActivity2"
+        android:label="activity_main2"
+        tools:layout="@layout/activity_main2" />
 </navigation>

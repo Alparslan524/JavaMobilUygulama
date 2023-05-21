@@ -35,8 +35,8 @@ public class MainActivity4 extends AppCompatActivity {
         TextView t1 = (TextView) findViewById(R.id.sonuc);
         int sayi1 = Integer.parseInt(s1.getText().toString());
         int sayi2 = Integer.parseInt(s2.getText().toString());
-        int topla = sayi1 + sayi2;
-        t1.setText(Integer.toString(topla));
+        float topla = (float) sayi1 + sayi2;
+        t1.setText(Float.toString(topla));
 
 
     }
@@ -47,8 +47,8 @@ public class MainActivity4 extends AppCompatActivity {
         TextView t1 = (TextView) findViewById(R.id.sonuc);
         int sayi1 = Integer.parseInt(s1.getText().toString());
         int sayi2 = Integer.parseInt(s2.getText().toString());
-        int cikar = sayi1 - sayi2;
-        t1.setText(Integer.toString(cikar));
+        float cikar = (float)sayi1 - sayi2;
+        t1.setText(Float.toString(cikar));
 
 
     }
@@ -59,8 +59,8 @@ public class MainActivity4 extends AppCompatActivity {
         TextView t1 = (TextView) findViewById(R.id.sonuc);
         int sayi1 = Integer.parseInt(s1.getText().toString());
         int sayi2 = Integer.parseInt(s2.getText().toString());
-        int bol = sayi1 / sayi2;
-        t1.setText(Integer.toString(bol));
+        float bol = (float)sayi1 / sayi2;
+        t1.setText(Float.toString(bol));
 
 
     }
@@ -71,8 +71,8 @@ public class MainActivity4 extends AppCompatActivity {
         TextView t1 = (TextView) findViewById(R.id.sonuc);
         int sayi1 = Integer.parseInt(s1.getText().toString());
         int sayi2 = Integer.parseInt(s2.getText().toString());
-        int carp = sayi1 * sayi2;
-        t1.setText(Integer.toString(carp));
+        float carp = (float)sayi1 * sayi2;
+        t1.setText(Float.toString(carp));
 
 
     }

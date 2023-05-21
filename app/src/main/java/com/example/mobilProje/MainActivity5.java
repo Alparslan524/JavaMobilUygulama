@@ -25,7 +25,7 @@ public class MainActivity5 extends AppCompatActivity {
 
         listview = findViewById(R.id.liste);
         liste = new ArrayList<>();
-        liste.add("Eren");
+        liste.add("Alparslan");
         liste.add("Fatma");
         liste.add("Mehmet");
         liste.add("Ahmet");
@@ -38,17 +38,17 @@ public class MainActivity5 extends AppCompatActivity {
                 switch (liste.get(position)) {
 
 
-                    case "Eren":
-                        Toast.makeText(MainActivity5.this, "id: eren | Şifre: solmaz", Toast.LENGTH_SHORT).show();
+                    case "Alparslan":
+                        Toast.makeText(MainActivity5.this, "id: alparslan | Şifre: 123", Toast.LENGTH_SHORT).show();
                         break;
                     case "Fatma":
-                        Toast.makeText(MainActivity5.this, "id: fatma | Şifre: korkmaz", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity5.this, "id: fatma | Şifre: password", Toast.LENGTH_SHORT).show();
                         break;
                     case "Mehmet":
-                        Toast.makeText(MainActivity5.this, "id: mehmet | Şifre: elma", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity5.this, "id: mehmet | Şifre: 123456789", Toast.LENGTH_SHORT).show();
                         break;
                     case "Ahmet":
-                        Toast.makeText(MainActivity5.this, "id: ahmet | Şifre: cam", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity5.this, "id: ahmet | Şifre: ahmet4242", Toast.LENGTH_SHORT).show();
                         break;
                     case "Geri":
                         Intent i = new Intent(MainActivity5.this, MainActivity2.class);
