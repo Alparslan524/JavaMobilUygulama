@@ -17,9 +17,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
 
 public class MainActivity3 extends AppCompatActivity {
-
+    DecimalFormat decimalFormat = new DecimalFormat("#.#####");
     private TextView tvExchangeRateDolar;
     private TextView tvExchangeRateEuro;
     private String euroRateStr;
@@ -66,7 +67,10 @@ public class MainActivity3 extends AppCompatActivity {
                     b = Double.parseDouble(euroRateStr.split(":")[1].trim());
                     c = a * b;
 
-                    tv.setText(String.valueOf(c));
+                    String formattedValue = decimalFormat.format(c);
+                    tv.setText(formattedValue);
+
+                    //tv.setText(String.valueOf(c));
                     Toast.makeText(MainActivity3.this, "Euro bazında hesaplanmıştır.", Toast.LENGTH_SHORT).show();
                 }
                 if(rb2.isChecked()) {
@@ -75,7 +79,9 @@ public class MainActivity3 extends AppCompatActivity {
                     b = Double.parseDouble(dolarRateStr.split(":")[1].trim());
                     c = a * b;
 
-                    tv.setText(String.valueOf(c));
+                    String formattedValue = decimalFormat.format(c);
+                    tv.setText(formattedValue);
+                    //tv.setText(String.valueOf(c));
                     Toast.makeText(MainActivity3.this, "Dolar bazında hesaplanmıştır.", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -118,8 +124,13 @@ public class MainActivity3 extends AppCompatActivity {
                     // TL/Dolar kurunu al
                     double tryToUsd = 1 / rates.getDouble("USD"); // Burada 1'e bölerek TL/Dolar kurunu elde ediyoruz
                     double tryToEuro = 1/rates.getDouble("EUR");
-                    tvExchangeRateDolar.setText("1 Dolar: " + tryToUsd);
-                    tvExchangeRateEuro.setText("1 Euro: "+tryToEuro);
+
+                    String formattedValueUSD = decimalFormat.format(tryToUsd);
+                    String formattedValueEUR = decimalFormat.format(tryToEuro);
+
+
+                    tvExchangeRateDolar.setText("1 Dolar: " + formattedValueUSD);
+                    tvExchangeRateEuro.setText("1 Euro: "+formattedValueEUR);
                     euroRateStr="1 Euro: " + tryToEuro;
                     dolarRateStr="1 Dolar: " + tryToUsd;
                 } catch (JSONException e) {
