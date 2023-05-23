@@ -1,4 +1,4 @@
-package com.example.mobilProje.ui.home;
+package com.example.mobilProje.fragments.home;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,8 +14,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.mobilProje.MainActivity;
-import com.example.mobilProje.MainActivity6;
+import com.example.mobilProje.loginActivity;
+import com.example.mobilProje.navActivity;
 import com.example.mobilProje.R;
 
 public class HomeFragment extends Fragment {
@@ -38,28 +38,28 @@ public class HomeFragment extends Fragment {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(getContext(), MainActivity6.class);
+                Intent a = new Intent(getContext(), navActivity.class);
                 startActivity(a);
             }
         });
         galeri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent x = new Intent(getContext(), MainActivity6.class);
+                Intent x = new Intent(getContext(), navActivity.class);
                 startActivity(x);
             }
         });
         profil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getContext(), MainActivity6.class);
+                Intent i = new Intent(getContext(), navActivity.class);
                 startActivity(i);
             }
         });
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(getContext(), MainActivity.class);
+                Intent a = new Intent(getContext(), loginActivity.class);
                 startActivity(a);
             }
         });

@@ -1,4 +1,4 @@
-package com.example.mobilProje.ui.dashboard;
+package com.example.mobilProje.fragments.dashboard;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

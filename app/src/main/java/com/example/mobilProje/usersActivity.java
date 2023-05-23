@@ -2,7 +2,7 @@ package com.example.mobilProje;
 
 import java.util.Date;
 
-public class kullanici {
+public class usersActivity {
     private String id;
     private String pw;
     private Integer kullanici_uid;
@@ -50,7 +50,7 @@ public class kullanici {
         this.acildigi_tarih = acildigi_tarih;
     }
 
-    public kullanici(String id, String pw) {
+    public usersActivity(String id, String pw) {
         this.id = id;
         this.pw = pw;
     }

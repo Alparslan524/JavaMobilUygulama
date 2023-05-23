@@ -1,4 +1,4 @@
-package com.example.mobilProje.ui.home;
+package com.example.mobilProje.fragments.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

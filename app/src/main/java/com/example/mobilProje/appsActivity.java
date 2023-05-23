@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity2 extends AppCompatActivity {
+public class appsActivity extends AppCompatActivity {
 
 
     Button  btn1;
@@ -21,7 +21,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_apps);
 
 
         btn1= findViewById(R.id.button1);
@@ -35,9 +35,9 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Intent a = new Intent(MainActivity2.this, MainActivity3.class);
+                Intent a = new Intent(appsActivity.this, exchangeActivity.class);
                 startActivity(a);
-                Toast.makeText(MainActivity2.this, "Döviz hesaplama açılıyor...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(appsActivity.this, "Döviz hesaplama açılıyor...", Toast.LENGTH_SHORT).show();
 
 
 
@@ -51,9 +51,9 @@ public class MainActivity2 extends AppCompatActivity {
 
 
 
-                Intent i = new Intent(MainActivity2.this, MainActivity4.class);
+                Intent i = new Intent(appsActivity.this, calculatorActivity.class);
                 startActivity(i);
-                Toast.makeText(MainActivity2.this, "Hesap makinesi açılıyor...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(appsActivity.this, "Hesap makinesi açılıyor...", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -65,9 +65,9 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Intent c = new Intent(MainActivity2.this, MainActivity5.class);
+                Intent c = new Intent(appsActivity.this, mainActivity5.class);
                 startActivity(c);
-                Toast.makeText(MainActivity2.this, "Listview açılıyor...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(appsActivity.this, "Listview açılıyor...", Toast.LENGTH_SHORT).show();
 
 
             }
@@ -79,9 +79,9 @@ public class MainActivity2 extends AppCompatActivity {
 
 
 
-                Intent x = new Intent(MainActivity2.this, MainActivity6.class);
+                Intent x = new Intent(appsActivity.this, navActivity.class);
                 startActivity(x);
-                Toast.makeText(MainActivity2.this, "Ana menüye dönülüyor...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(appsActivity.this, "Ana menüye dönülüyor...", Toast.LENGTH_SHORT).show();
 
             }
         });

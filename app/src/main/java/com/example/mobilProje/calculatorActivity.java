@@ -11,21 +11,21 @@ import android.widget.TextView;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity4 extends AppCompatActivity {
+public class calculatorActivity extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.activity_calculator);
     }
 
 
     public void oncikClick(View view){
         Button btnn = (Button) findViewById(R.id.btnn);
-        Intent i = new Intent(MainActivity4.this, MainActivity2.class);
+        Intent i = new Intent(calculatorActivity.this, appsActivity.class);
         startActivity(i);
-        Toast.makeText(MainActivity4.this, "Menüye yönlendiriliyorsunuz.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(calculatorActivity.this, "Menüye yönlendiriliyorsunuz.", Toast.LENGTH_SHORT).show();
 
     }
 

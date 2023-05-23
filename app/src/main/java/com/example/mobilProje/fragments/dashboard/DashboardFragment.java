@@ -1,4 +1,4 @@
-package com.example.mobilProje.ui.dashboard;
+package com.example.mobilProje.fragments.dashboard;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.mobilProje.MainActivity;
+import com.example.mobilProje.loginActivity;
 import com.example.mobilProje.R;
 
 public class DashboardFragment extends Fragment {
@@ -30,7 +30,7 @@ public class DashboardFragment extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(getContext(), MainActivity.class);
+                Intent a = new Intent(getContext(), loginActivity.class);
                 startActivity(a);
             }
         });

@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Vizeodev">
         <activity
-            android:name="com.example.mobilProje.MainActivity6"
+            android:name="com.example.mobilProje.navActivity"
             android:label="@string/title_activity_main6"></activity>
-        <activity android:name="com.example.mobilProje.MainActivity5" />
-        <activity android:name="com.example.mobilProje.MainActivity3" />
-        <activity android:name="com.example.mobilProje.MainActivity4" />
-        <activity android:name="com.example.mobilProje.MainActivity2" />
-        <activity android:name="com.example.mobilProje.MainActivity">
+        <activity android:name="com.example.mobilProje.mainActivity5" />
+        <activity android:name="com.example.mobilProje.exchangeActivity" />
+        <activity android:name="com.example.mobilProje.calculatorActivity" />
+        <activity android:name="com.example.mobilProje.appsActivity" />
+        <activity android:name="com.example.mobilProje.loginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

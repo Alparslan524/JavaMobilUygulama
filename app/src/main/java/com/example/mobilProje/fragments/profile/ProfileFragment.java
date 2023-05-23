@@ -1,4 +1,4 @@
-package com.example.mobilProje.ui.profile;
+package com.example.mobilProje.fragments.profile;
 
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;

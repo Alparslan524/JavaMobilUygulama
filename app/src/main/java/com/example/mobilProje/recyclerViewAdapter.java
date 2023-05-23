@@ -14,11 +14,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
+public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapter.MyViewHolder> {
     public Context mContext;
-    private List<Yerler> mData;
+    private List<places> mData;
 
-    public RecyclerViewAdapter(Context mContext, List<Yerler> mData) {
+    public recyclerViewAdapter(Context mContext, List<places> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }
@@ -40,7 +40,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mContext, CityList.class);
+                Intent intent = new Intent(mContext, cityList.class);
                 intent.putExtra("Book title",mData.get(position).getTitle());
                 intent.putExtra("Description",mData.get(position).getDescription());
                 intent.putExtra("Thumbnail",mData.get(position).getThumbnail());

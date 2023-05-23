@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MainActivity5 extends AppCompatActivity {
+public class mainActivity5 extends AppCompatActivity {
 
 
     ListView listview;
@@ -39,21 +39,21 @@ public class MainActivity5 extends AppCompatActivity {
 
 
                     case "Alparslan":
-                        Toast.makeText(MainActivity5.this, "id: alparslan | Şifre: 123", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mainActivity5.this, "id: alparslan | Şifre: 123", Toast.LENGTH_SHORT).show();
                         break;
                     case "Fatma":
-                        Toast.makeText(MainActivity5.this, "id: fatma | Şifre: password", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mainActivity5.this, "id: fatma | Şifre: password", Toast.LENGTH_SHORT).show();
                         break;
                     case "Mehmet":
-                        Toast.makeText(MainActivity5.this, "id: mehmet | Şifre: 123456789", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mainActivity5.this, "id: mehmet | Şifre: 123456789", Toast.LENGTH_SHORT).show();
                         break;
                     case "Ahmet":
-                        Toast.makeText(MainActivity5.this, "id: ahmet | Şifre: ahmet4242", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mainActivity5.this, "id: ahmet | Şifre: ahmet4242", Toast.LENGTH_SHORT).show();
                         break;
                     case "Geri":
-                        Intent i = new Intent(MainActivity5.this, MainActivity2.class);
+                        Intent i = new Intent(mainActivity5.this, appsActivity.class);
                         startActivity(i);
-                        Toast.makeText(MainActivity5.this, "Menüye Yönlendiriliyorsunuz.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mainActivity5.this, "Menüye Yönlendiriliyorsunuz.", Toast.LENGTH_SHORT).show();
                         break;
 
                 }

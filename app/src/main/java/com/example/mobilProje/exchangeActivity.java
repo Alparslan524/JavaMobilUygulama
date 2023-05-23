@@ -19,7 +19,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.text.DecimalFormat;
 
-public class MainActivity3 extends AppCompatActivity {
+public class exchangeActivity extends AppCompatActivity {
     DecimalFormat decimalFormat = new DecimalFormat("#.#####");
     private TextView tvExchangeRateDolar;
     private TextView tvExchangeRateEuro;
@@ -37,7 +37,7 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_exchange);
 
 
         btn= findViewById(R.id.btn);
@@ -68,10 +68,10 @@ public class MainActivity3 extends AppCompatActivity {
                     c = a * b;
 
                     String formattedValue = decimalFormat.format(c);
-                    tv.setText(formattedValue);
+                    tv.setText(formattedValue+ " TL");
 
-                    //tv.setText(String.valueOf(c));
-                    Toast.makeText(MainActivity3.this, "Euro bazında hesaplanmıştır.", Toast.LENGTH_SHORT).show();
+
+                    Toast.makeText(exchangeActivity.this, "Euro bazında hesaplanmıştır.", Toast.LENGTH_SHORT).show();
                 }
                 if(rb2.isChecked()) {
                     double a, b, c;
@@ -80,9 +80,9 @@ public class MainActivity3 extends AppCompatActivity {
                     c = a * b;
 
                     String formattedValue = decimalFormat.format(c);
-                    tv.setText(formattedValue);
-                    //tv.setText(String.valueOf(c));
-                    Toast.makeText(MainActivity3.this, "Dolar bazında hesaplanmıştır.", Toast.LENGTH_SHORT).show();
+                    tv.setText(formattedValue + " TL");
+
+                    Toast.makeText(exchangeActivity.this, "Dolar bazında hesaplanmıştır.", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -91,9 +91,9 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(MainActivity3.this, MainActivity2.class);
+                Intent i = new Intent(exchangeActivity.this, appsActivity.class);
                 startActivity(i);
-                Toast.makeText(MainActivity3.this, "Menüye yönlendiriliyorsunuz.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(exchangeActivity.this, "Menüye yönlendiriliyorsunuz.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -105,7 +105,7 @@ public class MainActivity3 extends AppCompatActivity {
             try {
                 // TCMB Döviz Kuru API'sinden verileri almak için HTTP isteği yap
                 String apiUrl = "https://api.exchangerate-api.com/v4/latest/TRY";
-                return HttpHelper.sendGetRequest(apiUrl);
+                return httpHelper.sendGetRequest(apiUrl);
             } catch (IOException e) {
                 e.printStackTrace();
                 return null;

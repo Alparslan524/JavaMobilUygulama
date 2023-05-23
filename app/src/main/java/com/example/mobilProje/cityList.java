@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class CityList extends AppCompatActivity {
+public class cityList extends AppCompatActivity {
     private TextView tvTitle,tvdescription,tvCat;
     private ImageView img;
 

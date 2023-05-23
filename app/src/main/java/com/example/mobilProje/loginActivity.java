@@ -13,7 +13,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class loginActivity extends AppCompatActivity {
 
 
     EditText et1;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         et1= findViewById(R.id.et1);
         et2= findViewById(R.id.et2);
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        kullanici eren = new kullanici("alparslanaydgn02@gmail.com", "123");
+        usersActivity alparslan = new usersActivity("alparslanaydgn02@gmail.com", "123");
 
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -47,21 +47,21 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (et1.getText().toString().equals("alparslanaydgn02@gmail.com") && et2.getText().toString().equals("123"))
                 {
-                    Intent i = new Intent(MainActivity.this, MainActivity6.class);
+                    Intent i = new Intent(loginActivity.this, navActivity.class);
                     startActivity(i);
                 }
                 else
                 {
-                    Toast.makeText(MainActivity.this, "Hatalı giriş!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(loginActivity.this, "Hatalı giriş!", Toast.LENGTH_SHORT).show();
                 }
 
                 if (rbtn1.isChecked()) {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                    Toast.makeText(MainActivity.this, "Açık mod etkinleştirildi.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(loginActivity.this, "Açık mod etkinleştirildi.", Toast.LENGTH_SHORT).show();
                 }
                 if (rbtn2.isChecked()) {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                    Toast.makeText(MainActivity.this, "Koyu mod etkinleştirildi.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(loginActivity.this, "Koyu mod etkinleştirildi.", Toast.LENGTH_SHORT).show();
                 }
 
 

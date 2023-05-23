@@ -14,12 +14,12 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-public class MainActivity6 extends AppCompatActivity {
+public class navActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main6);
+        setContentView(R.layout.activity_nav);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -37,19 +37,19 @@ public class MainActivity6 extends AppCompatActivity {
                 switch (id)
                 {
                     case R.id.navigation_dashboard:
-                        Toast.makeText(MainActivity6.this, "Giriş sayfasına dönülüyor...", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(navActivity.this, "Giriş sayfasına dönülüyor...", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.navigation_home:
-                        Toast.makeText(MainActivity6.this, "Anasayfaya dönülüyor...", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(navActivity.this, "Anasayfaya dönülüyor...", Toast.LENGTH_SHORT).show();
                         break;
 
 
                     case R.id.navigation_notifications:
-                        Toast.makeText(MainActivity6.this, "Galeriye gidiliyor...", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(navActivity.this, "Galeriye gidiliyor...", Toast.LENGTH_SHORT).show();
                         break;
 
                     case R.id.navigation_profile:
-                        Toast.makeText(MainActivity6.this, "Uygulamalara gidiliyor...", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(navActivity.this, "Uygulamalara gidiliyor...", Toast.LENGTH_SHORT).show();
                         break;
                 }
             }
